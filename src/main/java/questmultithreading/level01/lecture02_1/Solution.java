@@ -1,10 +1,10 @@
-package questmultithreading.level01;
+package questmultithreading.level01.lecture02_1;
 
 
 /*
 Определяем адрес сети
 */
-public class NetworkAddress {
+public class Solution {
     public static void main(String[] args) {
         byte[] ip = new byte[]{(byte) 192, (byte) 168, 1, 2};
         byte[] mask = new byte[]{(byte) 255, (byte) 255, (byte) 254, 0};
