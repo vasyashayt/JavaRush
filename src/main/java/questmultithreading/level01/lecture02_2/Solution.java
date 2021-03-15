@@ -3,6 +3,9 @@ package questmultithreading.level01.lecture02_2;
 import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
 
+/*
+Сравниваем модификаторы
+*/
 public class Solution {
     public static void main(String[] args) {
         int classModifiers = Solution.class.getModifiers();
@@ -14,10 +17,7 @@ public class Solution {
     }
 
     public static boolean isModifierSet(int allModifiers, int specificModifier) {
-        if ((allModifiers & specificModifier) != 0) {
-            return true;
-        }
-        return false;
+        return (allModifiers & specificModifier) != 0;
     }
 
     private static Method getMainMethod() {
